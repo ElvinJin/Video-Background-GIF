@@ -18,12 +18,11 @@
 {
     [super viewDidLoad];
     
-    UIWebView *webViewBG = [[UIWebView alloc] initWithFrame:self.view.frame];
-    
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"railway" ofType:@"gif"];
     NSData *gif = [NSData dataWithContentsOfFile:filePath];
-    [webViewBG loadData:gif MIMEType:@"image/gif" textEncodingName:nil baseURL:nil];
     
+    UIWebView *webViewBG = [[UIWebView alloc] initWithFrame:self.view.frame];
+    [webViewBG loadData:gif MIMEType:@"image/gif" textEncodingName:nil baseURL:nil];
     [self.view addSubview:webViewBG];
     
     UIView *filter = [[UIView alloc] initWithFrame:self.view.frame];
@@ -40,7 +39,7 @@
     
     UIButton *loginBtn = [[UIButton alloc] initWithFrame:CGRectMake(40, 360, 240, 40)];
     loginBtn.layer.borderColor = [[UIColor whiteColor] CGColor];
-    loginBtn.layer.borderWidth = 2.0f;
+    loginBtn.layer.borderWidth = 2.0;
     loginBtn.titleLabel.font = [UIFont systemFontOfSize:24];
     [loginBtn setTintColor:[UIColor whiteColor]];
     [loginBtn setTitle:@"Login" forState:UIControlStateNormal];

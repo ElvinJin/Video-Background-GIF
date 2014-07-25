@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		885F7A0819826A2100E1FA1D /* railway.gif in Resources */ = {isa = PBXBuildFile; fileRef = 885F7A0719826A2100E1FA1D /* railway.gif */; };
 		88FB07C619820CE5000DECF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FB07C519820CE5000DECF9 /* AppDelegate.swift */; };
 		88FB07C819820CE5000DECF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FB07C719820CE5000DECF9 /* ViewController.swift */; };
 		88FB07CB19820CE5000DECF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88FB07C919820CE5000DECF9 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		885F7A0719826A2100E1FA1D /* railway.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = railway.gif; sourceTree = "<group>"; };
 		88FB07C019820CE5000DECF9 /* VideoBackground.swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoBackground.swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88FB07C419820CE5000DECF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88FB07C519820CE5000DECF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		885F7A0619826A0F00E1FA1D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				885F7A0719826A2100E1FA1D /* railway.gif */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		88FB07B719820CE5000DECF9 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +89,7 @@
 				88FB07C719820CE5000DECF9 /* ViewController.swift */,
 				88FB07C919820CE5000DECF9 /* Main.storyboard */,
 				88FB07CC19820CE5000DECF9 /* Images.xcassets */,
+				885F7A0619826A0F00E1FA1D /* Images */,
 				88FB07C319820CE5000DECF9 /* Supporting Files */,
 			);
 			path = VideoBackground.swift;
@@ -189,6 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885F7A0819826A2100E1FA1D /* railway.gif in Resources */,
 				88FB07CB19820CE5000DECF9 /* Main.storyboard in Resources */,
 				88FB07CD19820CE5000DECF9 /* Images.xcassets in Resources */,
 			);
@@ -395,6 +407,7 @@
 				88FB07DE19820CE5000DECF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88FB07DF19820CE5000DECF9 /* Build configuration list for PBXNativeTarget "VideoBackground.swiftTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +416,7 @@
 				88FB07E119820CE5000DECF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
