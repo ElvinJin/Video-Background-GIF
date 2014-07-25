@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		880136D91982522100755F36 /* railway.gif in Resources */ = {isa = PBXBuildFile; fileRef = 880136D81982522100755F36 /* railway.gif */; };
 		88FB079719820CBA000DECF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FB079619820CBA000DECF9 /* main.m */; };
 		88FB079A19820CBA000DECF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FB079919820CBA000DECF9 /* AppDelegate.m */; };
 		88FB079D19820CBA000DECF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FB079C19820CBA000DECF9 /* ViewController.m */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		880136D81982522100755F36 /* railway.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = railway.gif; sourceTree = "<group>"; };
 		88FB079119820CBA000DECF9 /* VideoBackground.obj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoBackground.obj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88FB079519820CBA000DECF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88FB079619820CBA000DECF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		880136D719824CB500755F36 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				880136D81982522100755F36 /* railway.gif */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		88FB078819820CB9000DECF9 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +95,7 @@
 				88FB079C19820CBA000DECF9 /* ViewController.m */,
 				88FB079E19820CBA000DECF9 /* Main.storyboard */,
 				88FB07A119820CBA000DECF9 /* Images.xcassets */,
+				880136D719824CB500755F36 /* Images */,
 				88FB079419820CBA000DECF9 /* Supporting Files */,
 			);
 			path = VideoBackground.obj;
@@ -165,6 +176,7 @@
 				TargetAttributes = {
 					88FB079019820CBA000DECF9 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = HP634A2CZK;
 					};
 					88FB07A619820CBA000DECF9 = {
 						CreatedOnToolsVersion = 6.0;
@@ -196,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				880136D91982522100755F36 /* railway.gif in Resources */,
 				88FB07A019820CBA000DECF9 /* Main.storyboard in Resources */,
 				88FB07A219820CBA000DECF9 /* Images.xcassets in Resources */,
 			);
@@ -332,7 +345,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = VideoBackground.obj/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -343,7 +358,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = VideoBackground.obj/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -362,6 +379,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = VideoBackground.objTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -377,6 +395,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = VideoBackground.objTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -402,6 +421,7 @@
 				88FB07B319820CBA000DECF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88FB07B419820CBA000DECF9 /* Build configuration list for PBXNativeTarget "VideoBackground.objTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +430,7 @@
 				88FB07B619820CBA000DECF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
