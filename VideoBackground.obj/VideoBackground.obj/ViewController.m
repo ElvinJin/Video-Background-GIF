@@ -23,6 +23,7 @@
     
     UIWebView *webViewBG = [[UIWebView alloc] initWithFrame:self.view.frame];
     [webViewBG loadData:gif MIMEType:@"image/gif" textEncodingName:nil baseURL:nil];
+    webViewBG.userInteractionEnabled = NO;
     [self.view addSubview:webViewBG];
     
     UIView *filter = [[UIView alloc] initWithFrame:self.view.frame];
