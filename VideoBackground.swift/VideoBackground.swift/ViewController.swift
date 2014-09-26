@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         var filePath = NSBundle.mainBundle().pathForResource("railway", ofType: "gif")
-        var gif = NSData(contentsOfFile: filePath)
+        var gif = NSData(contentsOfFile: filePath!)
         
         var webViewBG = UIWebView(frame: self.view.frame)
         webViewBG.loadData(gif, MIMEType: "image/gif", textEncodingName: nil, baseURL: nil)
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         var loginBtn = UIButton(frame: CGRectMake(40, 360, 240, 40))
         loginBtn.layer.borderColor = UIColor.whiteColor().CGColor
         loginBtn.layer.borderWidth = 2
-        loginBtn.titleLabel.font = UIFont.systemFontOfSize(24)
+        loginBtn.titleLabel!.font = UIFont.systemFontOfSize(24)
         loginBtn.tintColor = UIColor.whiteColor()
         loginBtn.setTitle("Login", forState: UIControlState.Normal)
         self.view.addSubview(loginBtn)
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         var signUpBtn = UIButton(frame: CGRectMake(40, 420, 240, 40))
         signUpBtn.layer.borderColor = UIColor.whiteColor().CGColor
         signUpBtn.layer.borderWidth = 2
-        signUpBtn.titleLabel.font = UIFont.systemFontOfSize(24)
+        signUpBtn.titleLabel!.font = UIFont.systemFontOfSize(24)
         signUpBtn.tintColor = UIColor.whiteColor()
         signUpBtn.setTitle("Sign Up", forState: UIControlState.Normal)
         self.view.addSubview(signUpBtn)

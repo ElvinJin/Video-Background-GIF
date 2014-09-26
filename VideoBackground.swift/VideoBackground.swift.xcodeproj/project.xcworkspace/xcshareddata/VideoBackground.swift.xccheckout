@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>958891E6-4924-4B0F-A586-0182A13D9635</string>
+	<key>IDESourceControlProjectName</key>
+	<string>VideoBackground.swift</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4893B74FDAB0C1610C56C272666A3B812AE17DBB</key>
+		<string>https://github.com/ElvinJin/Video-Background.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>VideoBackground.swift/VideoBackground.swift.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4893B74FDAB0C1610C56C272666A3B812AE17DBB</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ElvinJin/Video-Background.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4893B74FDAB0C1610C56C272666A3B812AE17DBB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4893B74FDAB0C1610C56C272666A3B812AE17DBB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Video-Background</string>
+		</dict>
+	</array>
+</dict>
+</plist>
