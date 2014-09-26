@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         
         var webViewBG = UIWebView(frame: self.view.frame)
         webViewBG.loadData(gif, MIMEType: "image/gif", textEncodingName: nil, baseURL: nil)
+        webViewBG.userInteractionEnabled = false;
         self.view.addSubview(webViewBG)
         
         var filter = UIView()
