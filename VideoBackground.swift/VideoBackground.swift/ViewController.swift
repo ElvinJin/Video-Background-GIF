@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
                             
+    @IBOutlet weak var webViewBG: UIWebView!
+    @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var signUpButton: UIButton!
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -18,40 +23,13 @@ class ViewController: UIViewController {
         let htmlURL = URL(fileURLWithPath: htmlPath!)
         let html = try? Data(contentsOf: htmlURL)
         
-        let webViewBG = UIWebView(frame: self.view.frame)
-        webViewBG.load(html!, mimeType: "text/html", textEncodingName: String(), baseURL: htmlURL.deletingLastPathComponent())
+        self.webViewBG.load(html!, mimeType: "text/html", textEncodingName: String(), baseURL: htmlURL.deletingLastPathComponent())
         
-        webViewBG.isUserInteractionEnabled = false;
-        self.view.addSubview(webViewBG)
+        self.loginButton.layer.borderColor = UIColor.white.cgColor
+        self.loginButton.layer.borderWidth = 2
         
-        let filter = UIView()
-        filter.frame = self.view.frame
-        filter.backgroundColor = UIColor.black
-        filter.alpha = 0.05
-        self.view.addSubview(filter)
-        
-        let welcomeLabel = UILabel(frame: CGRect(x: 0, y: 100, width: self.view.bounds.size.width, height: 100))
-        welcomeLabel.text = "WELCOME"
-        welcomeLabel.textColor = UIColor.white
-        welcomeLabel.font = UIFont.systemFont(ofSize: 50)
-        welcomeLabel.textAlignment = NSTextAlignment.center
-        self.view.addSubview(welcomeLabel)
-        
-        let loginBtn = UIButton(frame: CGRect(x: 40, y: 360, width: 240, height: 40))
-        loginBtn.layer.borderColor = UIColor.white.cgColor
-        loginBtn.layer.borderWidth = 2
-        loginBtn.titleLabel!.font = UIFont.systemFont(ofSize: 24)
-        loginBtn.tintColor = UIColor.white
-        loginBtn.setTitle("Login", for: UIControlState())
-        self.view.addSubview(loginBtn)
-        
-        let signUpBtn = UIButton(frame: CGRect(x: 40, y: 420, width: 240, height: 40))
-        signUpBtn.layer.borderColor = UIColor.white.cgColor
-        signUpBtn.layer.borderWidth = 2
-        signUpBtn.titleLabel!.font = UIFont.systemFont(ofSize: 24)
-        signUpBtn.tintColor = UIColor.white
-        signUpBtn.setTitle("Sign Up", for: UIControlState())
-        self.view.addSubview(signUpBtn)
+        self.signUpButton.layer.borderColor = UIColor.white.cgColor
+        self.signUpButton.layer.borderWidth = 2
     }
 
     override func didReceiveMemoryWarning() {
