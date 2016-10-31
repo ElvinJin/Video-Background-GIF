@@ -14,12 +14,13 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         
-        let filePath = Bundle.main.path(forResource: "railway", ofType: "gif")
-        let gifURL = URL(fileURLWithPath: filePath!)
-        let gif = try? Data(contentsOf: gifURL)
+        let htmlPath = Bundle.main.path(forResource: "WebViewContent", ofType: "html")
+        let htmlURL = URL(fileURLWithPath: htmlPath!)
+        let html = try? Data(contentsOf: htmlURL)
         
         let webViewBG = UIWebView(frame: self.view.frame)
-        webViewBG.load(gif!, mimeType: "image/gif", textEncodingName: String(), baseURL: gifURL.deletingLastPathComponent())
+        webViewBG.load(html!, mimeType: "text/html", textEncodingName: String(), baseURL: htmlURL.deletingLastPathComponent())
+        
         webViewBG.isUserInteractionEnabled = false;
         self.view.addSubview(webViewBG)
         

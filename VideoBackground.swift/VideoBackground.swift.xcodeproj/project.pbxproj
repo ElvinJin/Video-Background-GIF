@@ -14,6 +14,7 @@
 		88FB07CD19820CE5000DECF9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88FB07CC19820CE5000DECF9 /* Images.xcassets */; };
 		88FB07D919820CE5000DECF9 /* VideoBackground_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FB07D819820CE5000DECF9 /* VideoBackground_swiftTests.swift */; };
 		9D55144B1DC6DE7F00BA0C40 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D55144A1DC6DE7F00BA0C40 /* Launch Screen.storyboard */; };
+		9D55144D1DC704C700BA0C40 /* WebViewContent.html in Resources */ = {isa = PBXBuildFile; fileRef = 9D55144C1DC704C700BA0C40 /* WebViewContent.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		88FB07D719820CE5000DECF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88FB07D819820CE5000DECF9 /* VideoBackground_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoBackground_swiftTests.swift; sourceTree = "<group>"; };
 		9D55144A1DC6DE7F00BA0C40 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		9D55144C1DC704C700BA0C40 /* WebViewContent.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WebViewContent.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			children = (
 				88FB07C519820CE5000DECF9 /* AppDelegate.swift */,
 				88FB07C719820CE5000DECF9 /* ViewController.swift */,
+				9D55144C1DC704C700BA0C40 /* WebViewContent.html */,
 				88FB07C919820CE5000DECF9 /* Main.storyboard */,
 				9D55144A1DC6DE7F00BA0C40 /* Launch Screen.storyboard */,
 				88FB07CC19820CE5000DECF9 /* Images.xcassets */,
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				885F7A0819826A2100E1FA1D /* railway.gif in Resources */,
+				9D55144D1DC704C700BA0C40 /* WebViewContent.html in Resources */,
 				88FB07CB19820CE5000DECF9 /* Main.storyboard in Resources */,
 				9D55144B1DC6DE7F00BA0C40 /* Launch Screen.storyboard in Resources */,
 				88FB07CD19820CE5000DECF9 /* Images.xcassets in Resources */,
