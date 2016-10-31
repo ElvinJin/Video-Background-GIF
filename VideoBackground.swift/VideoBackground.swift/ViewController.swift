@@ -14,41 +14,42 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         
-        let filePath = NSBundle.mainBundle().pathForResource("railway", ofType: "gif")
-        let gif = NSData(contentsOfFile: filePath!)
+        let filePath = Bundle.main.path(forResource: "railway", ofType: "gif")
+        let gifURL = URL(fileURLWithPath: filePath!)
+        let gif = try? Data(contentsOf: gifURL)
         
         let webViewBG = UIWebView(frame: self.view.frame)
-        webViewBG.loadData(gif!, MIMEType: "image/gif", textEncodingName: String(), baseURL: NSURL())
-        webViewBG.userInteractionEnabled = false;
+        webViewBG.load(gif!, mimeType: "image/gif", textEncodingName: String(), baseURL: gifURL.deletingLastPathComponent())
+        webViewBG.isUserInteractionEnabled = false;
         self.view.addSubview(webViewBG)
         
         let filter = UIView()
         filter.frame = self.view.frame
-        filter.backgroundColor = UIColor.blackColor()
+        filter.backgroundColor = UIColor.black
         filter.alpha = 0.05
         self.view.addSubview(filter)
         
-        let welcomeLabel = UILabel(frame: CGRectMake(0, 100, self.view.bounds.size.width, 100))
+        let welcomeLabel = UILabel(frame: CGRect(x: 0, y: 100, width: self.view.bounds.size.width, height: 100))
         welcomeLabel.text = "WELCOME"
-        welcomeLabel.textColor = UIColor.whiteColor()
-        welcomeLabel.font = UIFont.systemFontOfSize(50)
-        welcomeLabel.textAlignment = NSTextAlignment.Center
+        welcomeLabel.textColor = UIColor.white
+        welcomeLabel.font = UIFont.systemFont(ofSize: 50)
+        welcomeLabel.textAlignment = NSTextAlignment.center
         self.view.addSubview(welcomeLabel)
         
-        let loginBtn = UIButton(frame: CGRectMake(40, 360, 240, 40))
-        loginBtn.layer.borderColor = UIColor.whiteColor().CGColor
+        let loginBtn = UIButton(frame: CGRect(x: 40, y: 360, width: 240, height: 40))
+        loginBtn.layer.borderColor = UIColor.white.cgColor
         loginBtn.layer.borderWidth = 2
-        loginBtn.titleLabel!.font = UIFont.systemFontOfSize(24)
-        loginBtn.tintColor = UIColor.whiteColor()
-        loginBtn.setTitle("Login", forState: UIControlState.Normal)
+        loginBtn.titleLabel!.font = UIFont.systemFont(ofSize: 24)
+        loginBtn.tintColor = UIColor.white
+        loginBtn.setTitle("Login", for: UIControlState())
         self.view.addSubview(loginBtn)
         
-        let signUpBtn = UIButton(frame: CGRectMake(40, 420, 240, 40))
-        signUpBtn.layer.borderColor = UIColor.whiteColor().CGColor
+        let signUpBtn = UIButton(frame: CGRect(x: 40, y: 420, width: 240, height: 40))
+        signUpBtn.layer.borderColor = UIColor.white.cgColor
         signUpBtn.layer.borderWidth = 2
-        signUpBtn.titleLabel!.font = UIFont.systemFontOfSize(24)
-        signUpBtn.tintColor = UIColor.whiteColor()
-        signUpBtn.setTitle("Sign Up", forState: UIControlState.Normal)
+        signUpBtn.titleLabel!.font = UIFont.systemFont(ofSize: 24)
+        signUpBtn.tintColor = UIColor.white
+        signUpBtn.setTitle("Sign Up", for: UIControlState())
         self.view.addSubview(signUpBtn)
     }
 
@@ -57,8 +58,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
 
 
