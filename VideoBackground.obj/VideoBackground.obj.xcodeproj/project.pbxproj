@@ -14,6 +14,8 @@
 		88FB07A019820CBA000DECF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88FB079E19820CBA000DECF9 /* Main.storyboard */; };
 		88FB07A219820CBA000DECF9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88FB07A119820CBA000DECF9 /* Images.xcassets */; };
 		88FB07AE19820CBA000DECF9 /* VideoBackground_objTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FB07AD19820CBA000DECF9 /* VideoBackground_objTests.m */; };
+		9D55144F1DC7115100BA0C40 /* WebViewContent.html in Resources */ = {isa = PBXBuildFile; fileRef = 9D55144E1DC7115100BA0C40 /* WebViewContent.html */; };
+		9D5514511DC713E400BA0C40 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5514501DC713E400BA0C40 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		88FB07A719820CBA000DECF9 /* VideoBackground.objTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoBackground.objTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88FB07AC19820CBA000DECF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88FB07AD19820CBA000DECF9 /* VideoBackground_objTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoBackground_objTests.m; sourceTree = "<group>"; };
+		9D55144E1DC7115100BA0C40 /* WebViewContent.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WebViewContent.html; sourceTree = "<group>"; };
+		9D5514501DC713E400BA0C40 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +97,9 @@
 				88FB079919820CBA000DECF9 /* AppDelegate.m */,
 				88FB079B19820CBA000DECF9 /* ViewController.h */,
 				88FB079C19820CBA000DECF9 /* ViewController.m */,
+				9D55144E1DC7115100BA0C40 /* WebViewContent.html */,
 				88FB079E19820CBA000DECF9 /* Main.storyboard */,
+				9D5514501DC713E400BA0C40 /* Launch Screen.storyboard */,
 				88FB07A119820CBA000DECF9 /* Images.xcassets */,
 				880136D719824CB500755F36 /* Images */,
 				88FB079419820CBA000DECF9 /* Supporting Files */,
@@ -171,7 +177,7 @@
 		88FB078919820CBA000DECF9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = elvinjin;
 				TargetAttributes = {
 					88FB079019820CBA000DECF9 = {
@@ -210,6 +216,8 @@
 			files = (
 				8833D0EB1983D60700B77AF2 /* railway.gif in Resources */,
 				88FB07A019820CBA000DECF9 /* Main.storyboard in Resources */,
+				9D55144F1DC7115100BA0C40 /* WebViewContent.html in Resources */,
+				9D5514511DC713E400BA0C40 /* Launch Screen.storyboard in Resources */,
 				88FB07A219820CBA000DECF9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,15 +285,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -318,8 +330,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -327,6 +341,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -347,8 +362,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = VideoBackground.obj/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elvinjin.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -360,8 +376,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = VideoBackground.obj/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elvinjin.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -379,8 +396,9 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = VideoBackground.objTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elvinjin.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
@@ -395,8 +413,9 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = VideoBackground.objTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elvinjin.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};

@@ -67,15 +67,15 @@
                             <constraint firstItem="YYb-XV-5eh" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="GHt-KA-4qR"/>
                             <constraint firstItem="YYb-XV-5eh" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="GcT-Zo-19m"/>
                             <constraint firstItem="2Wj-nz-MPD" firstAttribute="width" secondItem="YYb-XV-5eh" secondAttribute="width" id="IHS-FC-Rzg"/>
+                            <constraint firstItem="iD2-hr-Drq" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="120" id="K7y-Uf-L65"/>
                             <constraint firstItem="GOn-Q3-2le" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="MJu-YD-ZK5"/>
                             <constraint firstItem="YYb-XV-5eh" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Ri3-le-vXV"/>
-                            <constraint firstItem="iD2-hr-Drq" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="120" id="SY3-Fp-CVj"/>
                             <constraint firstItem="NCX-XH-4qJ" firstAttribute="top" secondItem="GOn-Q3-2le" secondAttribute="bottom" constant="24" id="chS-gs-4CT"/>
                             <constraint firstItem="iD2-hr-Drq" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="ecO-oQ-EJx"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="NCX-XH-4qJ" secondAttribute="bottom" constant="100" id="hGg-r0-4Df"/>
                             <constraint firstItem="2Wj-nz-MPD" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="iJ8-Nb-D2L"/>
                             <constraint firstItem="NCX-XH-4qJ" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="mkI-zd-VPs"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="NCX-XH-4qJ" secondAttribute="bottom" constant="100" id="u2r-Yb-kPo"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="YYb-XV-5eh" secondAttribute="bottom" id="uaQ-ua-01p"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="YYb-XV-5eh" secondAttribute="bottom" id="ugO-1Q-6kT"/>
                             <constraint firstItem="2Wj-nz-MPD" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="vJY-Gf-lF1"/>
                         </constraints>
                     </view>
@@ -83,7 +83,6 @@
                         <outlet property="loginButton" destination="GOn-Q3-2le" id="Ajt-qV-VB8"/>
                         <outlet property="signUpButton" destination="NCX-XH-4qJ" id="Cw4-LB-Z1I"/>
                         <outlet property="webViewBG" destination="YYb-XV-5eh" id="oSr-PJ-IbQ"/>
-                        <outlet property="welcomeLabel" destination="iD2-hr-Drq" id="rEd-Xb-sq3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

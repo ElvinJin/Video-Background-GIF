@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController {
                             
     @IBOutlet weak var webViewBG: UIWebView!
-    @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
     
@@ -23,7 +22,7 @@ class ViewController: UIViewController {
         let htmlURL = URL(fileURLWithPath: htmlPath!)
         let html = try? Data(contentsOf: htmlURL)
         
-        self.webViewBG.load(html!, mimeType: "text/html", textEncodingName: String(), baseURL: htmlURL.deletingLastPathComponent())
+        self.webViewBG.load(html!, mimeType: "text/html", textEncodingName: "UTF-8", baseURL: htmlURL.deletingLastPathComponent())
         
         self.loginButton.layer.borderColor = UIColor.white.cgColor
         self.loginButton.layer.borderWidth = 2
